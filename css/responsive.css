@@ -1,0 +1,393 @@
+@media screen and (min-width: 550px) {
+  .container {
+    padding-left: 6%;
+    padding-right: 6%;
+  }
+
+  .p-1 {
+    padding: 1rem 1.5rem;
+  }
+
+  .p-1x {
+    padding: 1rem 1rem 1rem 1.5rem;
+  }
+  
+  .p-2 {
+    padding: 0.875rem 2rem;
+  }
+
+  .p-2x,
+  .p-3 {
+    padding: 1rem 2rem;
+  }
+  
+  .p-4 {
+    height: 4rem;
+    padding-left: 2rem;
+    padding-right: 1.5rem;
+  }
+
+  .small-text {
+    font-size: 1rem;
+    line-height: 175%;
+  }
+
+  .std-text {
+    font-size: 1.125rem;
+  }
+  
+  .mid-text {
+    font-size: 1rem;
+  }
+  
+  .lg-mid {
+    line-height: 150%;
+  }
+  
+  .lg-midx {
+    font-size: 2rem;
+    line-height: 150%;
+  }
+  
+  .lg {
+    font-size: 2rem;
+    line-height: 150%;
+  }
+  
+  .lg-x {
+    font-size: 2.5rem;
+    line-height: 150%;
+  }
+
+  .home .value-proposition .base {
+    width: 365px;
+    height: 40px;
+    margin-bottom: 2rem;
+  }
+
+  .home .value-proposition .base .base-text {
+    font-size: 1rem;
+    margin-right: 1rem;
+  }
+
+  .home .value-proposition .hero-title {
+    font-weight: 700;
+    font-size: 3.2rem;
+    line-height: 125%;
+  }
+
+  .home .value-proposition .hero-text {
+    width: 435px;
+    padding-top: 1.5rem;
+    padding-bottom: 1rem;
+  }
+  
+  .home .hero-ribbon1 {
+    top: 280px;
+    left: 0px;
+  }
+
+  .home .hero-ribbon2 {
+    bottom: 0;
+    right: 0;
+  }
+
+  .why-crappo .numbers {
+    justify-content: space-between;
+    width: 100%;
+  }
+
+  .why-crappo .numbers .stats .desc {
+    width: 230px;
+  }
+
+  .why-crappo .numbers .stats .desc .stats-heading {
+    padding-bottom: 0;
+    line-height: 125%;
+  }
+
+  .cryptocurrencies .cryto-coins {
+    padding-top: 300px;
+  }
+
+  footer {
+    padding-top: 3.5rem;
+  }
+}
+
+
+@media screen and (min-width: 900px) {
+  header .top i {
+    display: none;
+  }
+
+  header .top .menu-slide .slide-inner .nav-menu {
+    flex-direction: row;
+  }
+
+  header .top .menu-slide .slide-inner .nav-menu .primary-nav {
+    flex-direction: row;
+  }
+
+  header .top .menu-slide .slide-inner .nav-menu .primary-nav .pry-nav-list a {
+    font-size: 1rem;
+  }
+
+  header .top .menu-slide .slide-inner .nav-menu .secondary-nav .login {
+    font-size: 1rem;
+  }
+
+  header .top .menu-slide .slide-inner .nav-menu .secondary-nav .reg-btn {
+    font-size: 1rem;
+  }
+}
+
+
+@media screen and (min-width: 1008px) {
+  .flex {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .home .value-proposition .hero-title {
+    width: 470px;
+  }
+
+  .home .hero-ribbon1 {
+    top: 20px;
+    left: 190px;
+  }
+
+  .home .hero-ribbon2 {
+    top: 170px;
+  }
+
+  .why-crappo .numbers {
+    padding-top: 6rem;
+    padding-bottom: 7%;
+    gap: 1.3rem;
+  }
+
+  .why-crappo .why-choose-crappo {
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 4rem;
+  }
+
+  .earnings-check .text-center {
+    padding-top: 3.2rem;
+    padding-bottom: 4.5rem;
+  }
+
+  .earnings-check .text-center .check-earnings-title {
+    padding-bottom: 2.2rem;
+  }
+
+  .earnings-check .calculator-card .hashrate-calculator form {
+    flex-direction: row;
+    justify-content: space-around;
+    height: 155px;
+    
+  }
+
+  .earnings-check .calculator-card .estimate-bg .estimate {
+    padding: 2.5rem 3rem;
+    height: 210px;
+  }
+
+  .earnings-check .calculator-card .hashrate-calculator form .input {
+    width: 403px;
+  }
+
+  .earnings-check .calculator-card .hashrate-calculator form .select {
+    width: 200px;
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+
+  .earnings-check .calculator-card .hashrate-calculator form .hashrate-btn {
+    margin-top: auto;
+    margin-bottom: auto;
+  }
+
+  .cryptocurrencies .cryto-coins {
+    padding-top: 340px;
+    padding-bottom: 6rem;
+  }
+
+  .cryptocurrencies .cryto-coins .card-flex {
+    justify-content: space-between;
+    gap: 2.5rem;
+  }
+
+  .features-bg .features {
+    padding-top: 6.4rem;
+    padding-bottom: 2rem;
+  }
+
+  .features-bg .features .col {
+    padding-top: 1.2rem;
+    flex-direction: column;
+  }
+
+  .features-bg .features .flex-item {
+    justify-content: space-between;
+    gap: 6rem;
+  }
+
+  .features-bg .features .flex-item .smart-invest,
+  .features-bg .features .flex-item .stats-details,
+  .features-bg .features .flex-item .grow-profit {
+  padding-top: 2rem;
+}
+
+  .features-bg .features .flex-item:first-child {
+    align-items: flex-start;
+  }
+  
+  .features-bg .features .flex-item:nth-child(2) {
+    flex-direction: row-reverse;
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+  }
+
+  .features-bg .features .flex-item .statistics-chart {
+    position: absolute;
+    max-width: 50%;
+    left: 0;
+  }
+
+  .features-bg .features .flex-item .stats-details {
+    position: relative;
+    left: 72%;
+  }
+
+  .features-bg .features-ribbon-1 {
+    left: 120px;
+  }
+
+  .update-bg .update {
+    padding-top: 6rem;
+    padding-bottom: 6rem;
+  }
+
+  .update-bg .update-ribbon-1 {
+    left: -19%;
+  }
+
+  .update-bg .update-ribbon-2 {
+    right: 10%;
+  }
+
+  footer .grid {
+    grid-template-columns: repeat(3, 1fr) 355px;
+    place-items: start;
+    text-align: start;
+    gap: 0;
+  }
+
+  footer .grid .quick-link .menu-link a,
+  footer .grid .resources .menu-link a {
+    padding-left: 0;
+  }
+
+  footer .grid .payment-system .payment-heading {
+    padding-left: 2.3rem;
+  }
+
+  footer .row-rev {
+    flex-direction: row-reverse;
+    justify-content: space-between;
+  }
+}
+
+
+@media screen and (min-width: 1025px) {
+  .container {
+    padding-left: 8.3%;
+    padding-right: 8.3%;
+  }
+
+  .home .value-proposition .hero-title {
+    font-size: 4rem;
+    line-height: 76px;
+    width: 588px;
+  }
+
+  .home .hero-ribbon1 {
+    top: 45%;
+    left: 100px;
+  }
+  
+
+  .home .hero-ribbon2 {
+    top: 210px;
+  }
+  
+
+  .why-crappo .numbers {
+    padding-top: 8.5rem;
+    padding-bottom: 3rem;
+  }
+
+  .update-bg .update-ribbon-1 {
+    left: 0;
+  }
+}
+
+
+@media screen and (min-width: 1440px) {
+  .home .hero-ribbon1 {
+    top: 50%;
+    left: 100px;
+  }
+
+  .home .hero-ribbon2 {
+    top: 255px;
+  }
+
+  .why-crappo .numbers {
+    padding-top: 8.3rem;
+  }
+
+  .features-bg .features-ribbon-1 {
+    left: 150px;
+  }
+}
+
+
+@media screen and (min-width: 1485px) {
+  .container {
+    max-width: 1695px;
+  }
+
+  .features-bg .features .flex-item .statistics-chart {
+    position: relative;
+    left: 0;
+  }
+
+  .features-bg .features .flex-item .stats-details {
+    position: relative;
+    left: 0;
+  }
+
+  .scroll-to-top .fa-angle-up {
+    bottom: 10px;
+    right: 20%;
+  }
+}
+
+@media screen and (min-width: 1751px) {
+  
+  .home .hero-ribbon1,
+  .home .hero-ribbon2,
+  .why-crappo .why-ribbon1,
+  .why-crappo .why-ribbon2,
+  .why-crappo .why-ribbon3,
+  .features-bg .features-ribbon-1,
+  .features-bg .features-ribbon-2,
+  .update-bg .update-ribbon-1,
+  .update-bg .update-ribbon-2 {
+    display: none;
+  }
+}

@@ -59,24 +59,24 @@
     line-height: 150%;
   }
 
-  .home .value-proposition .base {
+  .home .base {
     width: 365px;
     height: 40px;
     margin-bottom: 2rem;
   }
 
-  .home .value-proposition .base .base-text {
+  .home .base-text {
     font-size: 1rem;
     margin-right: 1rem;
   }
 
-  .home .value-proposition .hero-title {
+  .home .hero-title {
     font-weight: 700;
     font-size: 3.2rem;
     line-height: 125%;
   }
 
-  .home .value-proposition .hero-text {
+  .home .hero-text {
     width: 435px;
     padding-top: 1.5rem;
     padding-bottom: 1rem;
@@ -97,11 +97,11 @@
     width: 100%;
   }
 
-  .why-crappo .numbers .stats .desc {
+  .why-crappo .desc {
     width: 230px;
   }
 
-  .why-crappo .numbers .stats .desc .stats-heading {
+  .why-crappo .stats-heading {
     padding-bottom: 0;
     line-height: 125%;
   }
@@ -121,23 +121,23 @@
     display: none;
   }
 
-  header .top .menu-slide .slide-inner .nav-menu {
+  header .nav-menu {
     flex-direction: row;
   }
 
-  header .top .menu-slide .slide-inner .nav-menu .primary-nav {
+  header .primary-nav {
     flex-direction: row;
   }
 
-  header .top .menu-slide .slide-inner .nav-menu .primary-nav .pry-nav-list a {
+  header .pry-nav-list a {
     font-size: 1rem;
   }
 
-  header .top .menu-slide .slide-inner .nav-menu .secondary-nav .login {
+  header .login {
     font-size: 1rem;
   }
 
-  header .top .menu-slide .slide-inner .nav-menu .secondary-nav .reg-btn {
+  header .reg-btn {
     font-size: 1rem;
   }
 }
@@ -149,7 +149,7 @@
     justify-content: space-between;
   }
 
-  .home .value-proposition .hero-title {
+  .home .hero-title {
     width: 470px;
   }
 
@@ -179,33 +179,33 @@
     padding-bottom: 4.5rem;
   }
 
-  .earnings-check .text-center .check-earnings-title {
+  .earnings-check .check-earnings-title {
     padding-bottom: 2.2rem;
   }
 
-  .earnings-check .calculator-card .hashrate-calculator form {
+  .earnings-check form {
     flex-direction: row;
     justify-content: space-around;
     height: 155px;
     
   }
 
-  .earnings-check .calculator-card .estimate-bg .estimate {
+  .earnings-check .estimate {
     padding: 2.5rem 3rem;
     height: 210px;
   }
 
-  .earnings-check .calculator-card .hashrate-calculator form .input {
+  .earnings-check .input {
     width: 403px;
   }
 
-  .earnings-check .calculator-card .hashrate-calculator form .select {
+  .earnings-check .select {
     width: 200px;
     margin-top: 0;
     margin-bottom: 0;
   }
 
-  .earnings-check .calculator-card .hashrate-calculator form .hashrate-btn {
+  .earnings-check .hashrate-btn {
     margin-top: auto;
     margin-bottom: auto;
   }
@@ -215,7 +215,7 @@
     padding-bottom: 6rem;
   }
 
-  .cryptocurrencies .cryto-coins .card-flex {
+  .cryptocurrencies .card-flex {
     justify-content: space-between;
     gap: 2.5rem;
   }
@@ -230,34 +230,34 @@
     flex-direction: column;
   }
 
-  .features-bg .features .flex-item {
+  .features-bg .flex-item {
     justify-content: space-between;
     gap: 6rem;
   }
 
-  .features-bg .features .flex-item .smart-invest,
-  .features-bg .features .flex-item .stats-details,
-  .features-bg .features .flex-item .grow-profit {
+  .features-bg .smart-invest,
+  .features-bg .stats-details,
+  .features-bg .grow-profit {
   padding-top: 2rem;
 }
 
-  .features-bg .features .flex-item:first-child {
+  .features-bg .flex-item:first-child {
     align-items: flex-start;
   }
   
-  .features-bg .features .flex-item:nth-child(2) {
+  .features-bg .flex-item:nth-child(2) {
     flex-direction: row-reverse;
     margin-top: 5rem;
     margin-bottom: 5rem;
   }
 
-  .features-bg .features .flex-item .statistics-chart {
+  .features-bg .statistics-chart {
     position: absolute;
     max-width: 50%;
     left: 0;
   }
 
-  .features-bg .features .flex-item .stats-details {
+  .features-bg .stats-details {
     position: relative;
     left: 72%;
   }
@@ -286,12 +286,12 @@
     gap: 0;
   }
 
-  footer .grid .quick-link .menu-link a,
-  footer .grid .resources .menu-link a {
+  footer .menu-link a,
+  footer .menu-link a {
     padding-left: 0;
   }
 
-  footer .grid .payment-system .payment-heading {
+  footer .payment-heading {
     padding-left: 2.3rem;
   }
 
@@ -308,7 +308,7 @@
     padding-right: 8.3%;
   }
 
-  .home .value-proposition .hero-title {
+  .home .hero-title {
     font-size: 4rem;
     line-height: 76px;
     width: 588px;
@@ -361,12 +361,12 @@
     max-width: 1695px;
   }
 
-  .features-bg .features .flex-item .statistics-chart {
+  .features-bg .statistics-chart {
     position: relative;
     left: 0;
   }
 
-  .features-bg .features .flex-item .stats-details {
+  .features-bg .stats-details {
     position: relative;
     left: 0;
   }

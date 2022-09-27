@@ -1,16 +1,4 @@
 @import url("https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;700&display=swap");
-:root {
-  --accent: #3671E9;
-  --primary-bg: #0D0D2B;
-  --neutral-white: #FFFFFF;
-  --gray-3: #828282;
-  --gray-4: #BDBDBD;
-  --gray-5: #E0E0E0;
-  --gray-6: #F2F2F2;
-  --secondary-bg: #2B076E;
-  --mining-bg: #3671E9;
-}
-
 * {
   margin: 0;
   padding: 0;
@@ -24,9 +12,9 @@ html {
 
 body {
   font-family: "Rubik", sans-serif;
-  color: var(--neutral-white);
+  color: #FFFFFF;
   font-weight: 400;
-  background-color: var(--primary-bg);
+  background-color: #0D0D2B;
 }
 
 ul {
@@ -46,7 +34,7 @@ img {
 }
 
 i {
-  font-size: 30px;
+  font-size: 25px;
   color: #ffffff;
   line-height: 2.25rem;
   cursor: pointer;
@@ -78,8 +66,8 @@ i {
   line-height: 150%;
   border: none;
   border-radius: 2rem;
-  background-color: var(--accent);
-  color: var(--neutral-white);
+  background-color: #3671E9;
+  color: #FFFFFF;
   cursor: pointer;
 }
 
@@ -111,23 +99,23 @@ i {
 }
 
 .gray-text3 {
-  color: var(--gray-3);
+  color: #828282;
 }
 
 .gray-text4 {
-  color: var(--gray-4);
+  color: #BDBDBD;
 }
 
 .gray-text5 {
-  color: var(--gray-5);
+  color: #E0E0E0;
 }
 
 .gray-text6 {
-  color: var(--gray-6);
+  color: #F2F2F2;
 }
 
 .dark-text {
-  color: var(--primary-bg);
+  color: #0D0D2B;
 }
 
 .small-text {
@@ -183,10 +171,10 @@ header .top {
   align-items: center;
 }
 @media (max-width: 899px) {
-  header .top .menu-slide {
+  header .menu-slide {
     position: absolute;
   }
-  header .top .menu-slide .slide-content {
+  header .slide-content {
     position: fixed;
     top: 0;
     bottom: 0;
@@ -197,17 +185,15 @@ header .top {
     transition: all 0.5s linear;
     z-index: 20;
   }
-  header .top .menu-slide .slide-content.active {
+  header .slide-content.active {
     right: 0;
   }
-}
-@media (max-width: 899px) {
-  header .top .menu-slide .slide-inner {
+  header .slide-inner {
     position: relative;
     width: 100%;
     height: 100%;
   }
-  header .top .menu-slide .slide-inner .fa-times {
+  header .fa-times {
     position: absolute;
     top: 1.4rem;
     right: 1.4rem;
@@ -216,7 +202,7 @@ header .top {
     z-index: 2;
   }
 }
-header .top .menu-slide .slide-inner .nav-menu {
+header .nav-menu {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -225,43 +211,43 @@ header .top .menu-slide .slide-inner .nav-menu {
   width: 100%;
   height: 100%;
 }
-header .top .menu-slide .slide-inner .nav-menu .primary-nav {
+header .primary-nav {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
   gap: 2rem;
 }
-header .top .menu-slide .slide-inner .nav-menu .primary-nav .pry-nav-list {
+header .pry-nav-list {
   line-height: 175%;
 }
-header .top .menu-slide .slide-inner .nav-menu .primary-nav .pry-nav-list a {
+header .pry-nav-list a {
   padding: 0.2rem;
   font-size: 1.4rem;
   letter-spacing: 0.01em;
-  color: var(--neutral-white);
+  color: #FFFFFF;
 }
-header .top .menu-slide .slide-inner .nav-menu .primary-nav .pry-nav-list a:hover {
-  border-bottom: 2px solid var(--accent);
+header .pry-nav-list a:hover {
+  border-bottom: 2px solid #3671E9;
 }
-header .top .menu-slide .slide-inner .nav-menu .secondary-nav {
+header .secondary-nav {
   display: flex;
   justify-content: center;
   align-items: center;
 }
-header .top .menu-slide .slide-inner .nav-menu .secondary-nav .login {
+header .login {
   padding: 0.4rem;
   font-size: 1.4rem;
   font-weight: 500;
   line-height: 150%;
-  color: var(--neutral-white);
+  color: #FFFFFF;
 }
-header .top .menu-slide .slide-inner .nav-menu .secondary-nav .divider {
+header .divider {
   color: hsla(0deg, 0%, 95%, 0.3);
   margin-right: 1.5rem;
   margin-left: 1.2rem;
 }
-header .top .menu-slide .slide-inner .nav-menu .secondary-nav .reg-btn {
+header .reg-btn {
   font-size: 1.4rem;
 }
 
@@ -273,7 +259,7 @@ header .top .menu-slide .slide-inner .nav-menu .secondary-nav .reg-btn {
 .home .value-proposition {
   max-width: 588px;
 }
-.home .value-proposition .base {
+.home .base {
   width: 300px;
   height: 35px;
   background: rgba(255, 255, 255, 0.1);
@@ -283,24 +269,24 @@ header .top .menu-slide .slide-inner .nav-menu .secondary-nav .reg-btn {
   justify-content: space-between;
   margin-bottom: 1.5rem;
 }
-.home .value-proposition .base .save-thumb {
+.home .save-thumb {
   padding: 0.25rem 0.65rem;
   background: #FFFFFF;
   border-radius: 32px;
   margin-left: 0.25rem;
 }
-.home .value-proposition .base .base-text {
+.home .base-text {
   font-size: 0.8rem;
   margin-right: 0.8rem;
 }
-.home .value-proposition .hero-title {
+.home .hero-title {
   font-weight: 700;
   font-size: 2.2rem;
   line-height: 125%;
   margin-top: 0.5rem;
   margin-bottom: 0.75rem;
 }
-.home .value-proposition .btn {
+.home .btn {
   font-size: 1.125rem;
   margin-top: 1.5rem;
   margin-bottom: 1.5rem;
@@ -329,7 +315,7 @@ header .top .menu-slide .slide-inner .nav-menu .secondary-nav .reg-btn {
 .why-crappo .numbers {
   width: 100%;
 }
-.why-crappo .numbers .stats {
+.why-crappo .stats {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -337,7 +323,7 @@ header .top .menu-slide .slide-inner .nav-menu .secondary-nav .reg-btn {
   text-transform: capitalize;
   margin-bottom: 1.2rem;
 }
-.why-crappo .numbers .stats .stats-icon {
+.why-crappo .stats-icon {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -346,10 +332,10 @@ header .top .menu-slide .slide-inner .nav-menu .secondary-nav .reg-btn {
   height: 4rem;
   border-radius: 50%;
 }
-.why-crappo .numbers .stats .desc {
+.why-crappo .desc {
   width: 190px;
 }
-.why-crappo .numbers .stats .desc .stats-heading {
+.why-crappo .stats-heading {
   text-transform: uppercase;
   padding-bottom: 0.2rem;
 }
@@ -358,16 +344,16 @@ header .top .menu-slide .slide-inner .nav-menu .secondary-nav .reg-btn {
   gap: 1.5rem;
   margin-top: 4rem;
 }
-.why-crappo .why-choose-crappo .illustration {
+.why-crappo .illustration {
   max-width: 650px;
 }
-.why-crappo .why-choose-crappo .reason .reason-heading {
+.why-crappo .reason-heading {
   margin-bottom: 1.25rem;
 }
-.why-crappo .why-choose-crappo .reason .reason-text {
+.why-crappo .reason-text {
   margin-bottom: 1.5rem;
 }
-.why-crappo .why-choose-crappo .reason .why-btn {
+.why-crappo .why-btn {
   font-size: 1.125rem;
   margin-bottom: 2.5rem;
 }
@@ -403,7 +389,7 @@ header .top .menu-slide .slide-inner .nav-menu .secondary-nav .reg-btn {
   margin-left: auto;
   margin-right: auto;
 }
-.earnings-check .text-center .check-earnings-title {
+.earnings-check .check-earnings-title {
   padding-bottom: 1.25rem;
 }
 .earnings-check .calculator-card {
@@ -413,11 +399,11 @@ header .top .menu-slide .slide-inner .nav-menu .secondary-nav .reg-btn {
   box-shadow: 0px 20px 40px hsla(261deg, 68%, 28%, 0.2);
   border-radius: 1rem;
 }
-.earnings-check .calculator-card .hashrate-calculator {
+.earnings-check .hashrate-calculator {
   background-color: #FBFCFE;
   border-radius: 16px 16px 0px 0px;
 }
-.earnings-check .calculator-card .hashrate-calculator form {
+.earnings-check form {
   padding: 1.5rem;
   display: flex;
   flex-direction: column;
@@ -425,53 +411,53 @@ header .top .menu-slide .slide-inner .nav-menu .secondary-nav .reg-btn {
   justify-content: space-between;
   width: 100%;
 }
-.earnings-check .calculator-card .hashrate-calculator form .input,
-.earnings-check .calculator-card .hashrate-calculator form .select {
+.earnings-check .input,
+.earnings-check .select {
   background-color: transparent;
   outline: 2px solid transparent;
   border: none;
   border-bottom: 1px solid #E0E0E0;
-  color: var(--primary-bg);
+  color: #0D0D2B;
   font-size: 1.125rem;
   font-weight: 400;
   line-height: 150%;
   height: 38px;
   width: 100%;
 }
-.earnings-check .calculator-card .hashrate-calculator form .input::-moz-placeholder {
-  color: var(--primary-bg);
+.earnings-check .input::-moz-placeholder {
+  color: #0D0D2B;
 }
-.earnings-check .calculator-card .hashrate-calculator form .input:-ms-input-placeholder {
-  color: var(--primary-bg);
+.earnings-check .input:-ms-input-placeholder {
+  color: #0D0D2B;
 }
-.earnings-check .calculator-card .hashrate-calculator form .input::placeholder {
-  color: var(--primary-bg);
+.earnings-check .input::placeholder {
+  color: #0D0D2B;
 }
-.earnings-check .calculator-card .hashrate-calculator form .select {
+.earnings-check .select {
   margin-top: 1rem;
   margin-bottom: 1.5rem;
   cursor: pointer;
 }
-.earnings-check .calculator-card .hashrate-calculator form .hashrate-btn {
+.earnings-check .hashrate-btn {
   font-size: 1.125rem;
   display: flex;
   align-self: flex-start;
 }
-.earnings-check .calculator-card .hashrate-calculator form .hashrate-btn:hover {
+.earnings-check .hashrate-btn:hover {
   background-color: #2967e2;
 }
-.earnings-check .calculator-card .estimate-bg {
+.earnings-check .estimate-bg {
   background: #FFFFFF;
   border-radius: 0px 0px 16px 16px;
 }
-.earnings-check .calculator-card .estimate-bg .estimate {
+.earnings-check .estimate {
   padding: 1.5rem;
   width: 100%;
 }
-.earnings-check .calculator-card .estimate-bg .estimate .blue-text {
-  color: var(--accent);
+.earnings-check .blue-text {
+  color: #3671E9;
 }
-.earnings-check .calculator-card .estimate-bg .estimate .value {
+.earnings-check .value {
   margin-top: 1.25rem;
   margin-bottom: 1rem;
 }
@@ -484,40 +470,36 @@ header .top .menu-slide .slide-inner .nav-menu .secondary-nav .reg-btn {
   padding-bottom: 3rem;
   text-align: center;
 }
-.cryptocurrencies .cryto-coins .crypto-heading {
+.cryptocurrencies .crypto-heading {
   max-width: 741px;
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 4rem;
 }
-.cryptocurrencies .cryto-coins .card-flex {
+.cryptocurrencies .card-flex {
   gap: 3rem;
 }
-.cryptocurrencies .cryto-coins .card-flex .bit-card,
-.cryptocurrencies .cryto-coins .card-flex .card {
+.cryptocurrencies .bit-card,
+.cryptocurrencies .card {
   max-width: 370px;
   width: 100%;
   border-radius: 1rem;
   cursor: pointer;
   padding: 3rem 1.5rem;
 }
-.cryptocurrencies .cryto-coins .card-flex .bit-card .card-content,
-.cryptocurrencies .cryto-coins .card-flex .card .card-content {
+.cryptocurrencies .card-content {
   flex-direction: column;
   gap: 2rem;
 }
-.cryptocurrencies .cryto-coins .card-flex .bit-card .card-content .coin-logo,
-.cryptocurrencies .cryto-coins .card-flex .card .card-content .coin-logo {
+.cryptocurrencies .coin-logo {
   margin-bottom: 1rem;
 }
-.cryptocurrencies .cryto-coins .card-flex .bit-card .card-content .coin-name,
-.cryptocurrencies .cryto-coins .card-flex .card .card-content .coin-name {
+.cryptocurrencies .coin-name {
   font-size: 2rem;
   font-weight: 700;
   line-height: 150%;
 }
-.cryptocurrencies .cryto-coins .card-flex .bit-card .card-content .coin-name .sup-caps,
-.cryptocurrencies .cryto-coins .card-flex .card .card-content .coin-name .sup-caps {
+.cryptocurrencies .sup-caps {
   text-transform: uppercase;
   font-weight: 500;
   font-size: 1.125rem;
@@ -525,72 +507,67 @@ header .top .menu-slide .slide-inner .nav-menu .secondary-nav .reg-btn {
   color: #bdbdbd;
   vertical-align: middle;
 }
-.cryptocurrencies .cryto-coins .card-flex .bit-card .card-content .desc,
-.cryptocurrencies .cryto-coins .card-flex .card .card-content .desc {
+.cryptocurrencies .desc {
   font-size: 1rem;
 }
-.cryptocurrencies .cryto-coins .card-flex .bit-card {
-  background-color: var(--secondary-bg);
+.cryptocurrencies .bit-card {
+  background-color: #2B076E;
   color: #fff;
 }
-.cryptocurrencies .cryto-coins .card-flex .bit-card .btn {
+.cryptocurrencies .bit-card .btn {
   font-size: 1.125rem;
 }
-.cryptocurrencies .cryto-coins .card-flex .card {
+.cryptocurrencies .card {
   background-color: #fff;
   mix-blend-mode: multiply;
   box-shadow: 0px 20px 40px hsla(261deg, 68%, 28%, 0.2);
 }
-.cryptocurrencies .cryto-coins .card-flex .card .arrow-btn {
+.cryptocurrencies .arrow-btn {
   border: none;
   background-color: transparent;
   cursor: pointer;
 }
 
 .features-bg {
-  background-color: var(--secondary-bg);
+  background-color: #2B076E;
   position: relative;
 }
 .features-bg .features {
   padding-top: 4rem;
 }
-.features-bg .features .features-heading {
+.features-bg .features-heading {
   max-width: 758px;
   margin-bottom: 3rem;
   text-align: center;
   margin-left: auto;
   margin-right: auto;
 }
-.features-bg .features .flex-item {
+.features-bg .flex-item {
   padding-top: 2rem;
   padding-bottom: 4rem;
 }
-.features-bg .features .flex-item .smart-invest,
-.features-bg .features .flex-item .stats-details,
-.features-bg .features .flex-item .grow-profit {
+.features-bg .smart-invest,
+.features-bg .stats-details,
+.features-bg .grow-profit {
   max-width: 420px;
   margin-left: auto;
   margin-right: auto;
 }
-.features-bg .features .flex-item .smart-invest .heading,
-.features-bg .features .flex-item .stats-details .heading,
-.features-bg .features .flex-item .grow-profit .heading {
+.features-bg .heading {
   margin-bottom: 1.25rem;
 }
-.features-bg .features .flex-item .smart-invest .stats-btn,
-.features-bg .features .flex-item .stats-details .stats-btn,
-.features-bg .features .flex-item .grow-profit .stats-btn {
+.features-bg .stats-btn {
   margin-top: 1.5rem;
   margin-bottom: 1rem;
   font-size: 1rem;
 }
-.features-bg .features .flex-item .coin-chart {
+.features-bg .coin-chart {
   max-width: 580px;
 }
-.features-bg .features .flex-item .statistics-chart {
+.features-bg .statistics-chart {
   max-width: 710px;
 }
-.features-bg .features .flex-item .coin-table {
+.features-bg .coin-table {
   max-width: 680px;
 }
 .features-bg .features-ribbon-1,
@@ -614,35 +591,35 @@ header .top .menu-slide .slide-inner .nav-menu .secondary-nav .reg-btn {
   padding-top: 4rem;
   padding-bottom: 4rem;
 }
-.update-bg .update .update-card {
+.update-bg .update-card {
   max-width: 1200px;
   padding: 1.5rem 1.25rem;
   justify-content: space-between;
   gap: 0.5rem;
-  background: var(--mining-bg);
+  background: #3671E9;
   border-radius: 1rem;
-  color: var(--neutral-white);
+  color: #FFFFFF;
   position: relative;
   margin-left: auto;
   margin-right: auto;
 }
-.update-bg .update .update-card .start-mining-text {
+.update-bg .start-mining-text {
   width: 100%;
   max-width: 501px;
 }
-.update-bg .update .update-card .start-mining-text .headline {
+.update-bg .headline {
   margin-bottom: 1.25rem;
 }
-.update-bg .update .update-card .start-mining-text .start-mining-para {
+.update-bg .start-mining-para {
   max-width: 348px;
   margin-bottom: 1.25rem;
 }
-.update-bg .update .update-card .subscribe-form {
+.update-bg .subscribe-form {
   gap: 1.5rem;
   width: 100%;
   max-width: 566px;
 }
-.update-bg .update .update-card .subscribe-form .enter-email {
+.update-bg .enter-email {
   font-size: 1rem;
   font-weight: 400;
   line-height: 175%;
@@ -654,28 +631,30 @@ header .top .menu-slide .slide-inner .nav-menu .secondary-nav .reg-btn {
   width: 100%;
   height: 28px;
 }
-.update-bg .update .update-card .subscribe-form .enter-email::-moz-placeholder {
-  color: var(--neutral-white);
+.update-bg .enter-email::-moz-placeholder {
+  color: #FFFFFF;
 }
-.update-bg .update .update-card .subscribe-form .enter-email:-ms-input-placeholder {
-  color: var(--neutral-white);
+.update-bg .enter-email:-ms-input-placeholder {
+  color: #FFFFFF;
 }
-.update-bg .update .update-card .subscribe-form .enter-email::placeholder {
-  color: var(--neutral-white);
+.update-bg .enter-email::placeholder {
+  color: #FFFFFF;
 }
-.update-bg .update .update-card .subscribe-form .subscribe-btn {
-  background-color: var(--neutral-white);
+.update-bg .subscribe-btn {
+  background-color: #FFFFFF;
   font-size: 1.125rem;
+  display: flex;
+  align-self: flex-start;
 }
-.update-bg .update .update-card .mining-ribbon-1,
-.update-bg .update .update-card .mining-ribbon-2 {
+.update-bg .mining-ribbon-1,
+.update-bg .mining-ribbon-2 {
   position: absolute;
 }
-.update-bg .update .update-card .mining-ribbon-1 {
+.update-bg .mining-ribbon-1 {
   top: 0;
   left: 1%;
 }
-.update-bg .update .update-card .mining-ribbon-2 {
+.update-bg .mining-ribbon-2 {
   bottom: 0;
   right: 1%;
 }
@@ -694,7 +673,7 @@ header .top .menu-slide .slide-inner .nav-menu .secondary-nav .reg-btn {
 
 footer {
   padding-top: 2rem;
-  color: var(--neutral-white);
+  color: #FFFFFF;
   position: relative;
 }
 footer .grid {
@@ -705,41 +684,36 @@ footer .grid {
   place-items: center;
   text-align: center;
 }
-footer .grid .quick-link,
-footer .grid .resources {
+footer .quick-link,
+footer .resources {
   max-width: 200px;
 }
-footer .grid .quick-link .quick-link-heading,
-footer .grid .quick-link .resources-heading,
-footer .grid .resources .quick-link-heading,
-footer .grid .resources .resources-heading {
+footer .quick-link-heading,
+footer .resources-heading {
   margin-bottom: 1.5rem;
 }
-footer .grid .quick-link .menu-link,
-footer .grid .resources .menu-link {
+footer .menu-link {
   font-weight: 400;
   font-size: 1rem;
   line-height: 230%;
   margin-bottom: 0.5rem;
 }
-footer .grid .quick-link .menu-link a,
-footer .grid .resources .menu-link a {
+footer .menu-link a {
   padding: 0.5rem;
 }
-footer .grid .quick-link .menu-link a:hover,
-footer .grid .resources .menu-link a:hover {
-  color: var(--mining-bg);
+footer .menu-link a:hover {
+  color: #3671E9;
 }
-footer .grid .payment-system .payment-heading {
+footer .payment-heading {
   margin-bottom: 2.5rem;
 }
-footer .grid .payment-system .payment-system-icon {
+footer .payment-system-icon {
   display: flex;
   justify-content: center;
   align-items: center;
   gap: 0.2rem;
 }
-footer .grid .payment-system .payment-system-icon .payment-icon {
+footer .payment-icon {
   width: 96px;
   height: 64px;
   background-color: hsla(0deg, 0%, 88%, 0.05);
@@ -750,28 +724,28 @@ footer .grid .payment-system .payment-system-icon .payment-icon {
   cursor: pointer;
   transform: scale(0.9);
 }
-footer .grid .payment-system .payment-system-icon .payment-icon:hover {
+footer .payment-icon:hover {
   transform: scale(1);
 }
 footer .copyright-contact {
   padding-top: 4rem;
   padding-bottom: 3rem;
 }
-footer .copyright-contact .row-rev {
+footer .row-rev {
   gap: 2.5rem;
 }
-footer .copyright-contact .row-rev .social-icons {
+footer .social-icons {
   display: flex;
   gap: 2rem;
 }
-footer .copyright-contact .row-rev .social-icons li:hover .social-icon {
+footer .social-icon:hover {
   transform: translateY(-5px);
   transition: transform 0.1s ease-in-out;
 }
 footer .scroll-to-top {
   position: relative;
 }
-footer .scroll-to-top .fa-angle-up {
+footer .fa-angle-up {
   position: fixed;
   bottom: 3rem;
   right: 0.5rem;
@@ -795,7 +769,7 @@ footer .scroll-to-top .fa-angle-up {
   visibility: hidden;
   opacity: 0;
 }
-footer .scroll-to-top .fa-angle-up:hover {
+footer .fa-angle-up:hover {
   -webkit-animation: none;
           animation: none;
 }

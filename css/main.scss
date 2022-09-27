@@ -17,6 +17,13 @@ $mining-bg: #3671E9;
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  outline: 1px solid red;
+  overflow-x: hidden;
+}
+
+*::before,
+*::after {
+  box-sizing: border-box;
 }
 
 html {
@@ -51,13 +58,12 @@ i {
   color: #ffffff;
   line-height: 2.25rem;
   cursor: pointer;
-  // z-index: 2;
 }
 
 .container {
   padding-left: 5%;
   padding-right: 5%;
-  width: 100%;
+  // width: 100%;
 }
 
 .mx-auto {
@@ -221,8 +227,8 @@ header {
       position: absolute;
       top: 1.4rem;
       right: 1.4rem;
-      width: 30px;
-      height: 30px;
+      width: 25px;
+      height: 25px;
       z-index: 2;
     }
   }
@@ -298,7 +304,7 @@ header {
   }
 
   .base {
-    width: 300px;
+    width: 288px;
     height: 35px;
     background: rgba(255, 255, 255, 0.1);
     border-radius: 32px;
@@ -309,7 +315,7 @@ header {
   }
 
   .save-thumb {
-    padding: .25rem .65rem;
+    padding: .2rem .4rem;
     background: #FFFFFF;
     border-radius: 32px;
     margin-left: .25rem;
@@ -317,7 +323,7 @@ header {
 
   .base-text {
     font-size: .8rem;
-    margin-right: .8rem;
+    margin-right: .6rem;
   }
 
   .hero-title {
@@ -344,7 +350,11 @@ header {
   }
 
   .hero-ribbon1 {
-    top: 280px;
+    @media (max-width: 320px) {
+      top: 400px;
+    }
+
+    top: 250px;
     left: 0;
     }
 
@@ -843,7 +853,7 @@ footer {
   }
 
   .payment-icon {
-    width: 96px;
+    width: 94px;
     height: 64px;
     background-color: hsla(0, 0%, 88%, 0.05);
     border-radius: 8px;

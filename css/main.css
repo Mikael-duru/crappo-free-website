@@ -4,7 +4,6 @@
   padding: 0;
   box-sizing: border-box;
   outline: 1px solid red;
-  overflow-x: hidden;
 }
 
 *::before,
@@ -50,6 +49,7 @@ i {
 .container {
   padding-left: 5%;
   padding-right: 5%;
+  width: 100%;
 }
 
 .mx-auto {
@@ -170,6 +170,7 @@ header {
   padding-top: 1.25rem;
   padding-bottom: 1.25rem;
   position: relative;
+  overflow-x: hidden;
 }
 header .top {
   display: flex;
@@ -257,6 +258,10 @@ header .reg-btn {
   font-size: 1.4rem;
 }
 
+main {
+  overflow-x: hidden;
+}
+
 .home {
   padding-bottom: 1rem;
   padding-top: 2rem;
@@ -339,8 +344,8 @@ header .reg-btn {
   align-items: center;
   justify-content: center;
   background: rgba(255, 255, 255, 0.1);
-  width: 4rem;
-  height: 4rem;
+  width: 5rem;
+  height: 5rem;
   border-radius: 50%;
 }
 .why-crappo .desc {
@@ -390,12 +395,11 @@ header .reg-btn {
   height: 457px;
   padding-top: 2rem;
   padding-bottom: 1.5rem;
-  position: relative;
 }
 .earnings-check .text-center {
   max-width: 622px;
   text-align: center;
-  padding-top: 1.1rem;
+  padding-top: 1rem;
   padding-bottom: 2rem;
   margin-left: auto;
   margin-right: auto;
@@ -404,7 +408,6 @@ header .reg-btn {
   padding-bottom: 1.25rem;
 }
 .earnings-check .calculator-card {
-  position: relative;
   max-width: 942px;
   margin: 0 auto;
   box-shadow: 0px 20px 40px hsla(261deg, 68%, 28%, 0.2);
@@ -722,10 +725,9 @@ footer .payment-system-icon {
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 0.2rem;
 }
 footer .payment-icon {
-  width: 94px;
+  width: 96px;
   height: 64px;
   background-color: hsla(0deg, 0%, 88%, 0.05);
   border-radius: 8px;

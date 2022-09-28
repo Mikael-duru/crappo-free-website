@@ -309,24 +309,25 @@
   }
 
   .home .hero-title {
-    font-size: 4rem;
+    font-size: 3.4rem;
     line-height: 76px;
-    width: 588px;
+    width: 490px;
   }
 
   .home .hero-ribbon1 {
-    top: 45%;
-    left: 100px;
+    top: 30%;
+    left: 25px;
   }
   
 
   .home .hero-ribbon2 {
-    top: 210px;
+    top: 120px;
+    right: -100px;
   }
   
 
   .why-crappo .numbers {
-    padding-top: 8.5rem;
+    padding-top: 1rem;
     padding-bottom: 3rem;
   }
 
@@ -336,10 +337,34 @@
 }
 
 
-@media screen and (min-width: 1440px) {
+@media screen and (min-width: 1100px) {
   .home .hero-ribbon1 {
-    top: 50%;
-    left: 100px;
+    top: 35%;
+    left: 105px;
+  }
+  
+
+  .home .hero-ribbon2 {
+    top: 200px;
+    right: -30px;
+  }
+
+  .why-crappo .numbers {
+    padding-top: 4.5rem;
+    padding-bottom: 3rem;
+  }
+}
+
+
+@media screen and (min-width: 1440px) {
+  .home .hero-title {
+    font-size: 4rem;
+    width: 588px;
+  }
+
+  .home .hero-ribbon1 {
+    top: 61%;
+    left: 0px;
   }
 
   .home .hero-ribbon2 {
